@@ -5,7 +5,7 @@ import { Pieces } from '../art-list';
 @Component({
   selector: 'app-art-list',
   templateUrl: './art-list.component.html',
-  styleUrls: ['./art-list.component.css']
+  styleUrls: ['./art-list.component.scss']
 })
 export class ArtListComponent implements OnInit {
   artList: ArtPiece[] = Pieces;
