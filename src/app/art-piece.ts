@@ -1,5 +1,5 @@
-class ArtPiece {
+export class ArtPiece {
   id: number;
-  name: number;
+  name: string;
   description: string;
 }
