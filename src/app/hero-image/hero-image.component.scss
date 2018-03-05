@@ -1,0 +1,31 @@
+@import "~sass/styles.scss";
+
+#hero-image-container {
+    height: 500px;
+    background-color:#333;
+    background-image: url('/assets/images/mountain-range.jpg');
+    background-position-y: 34%;
+    background-size: cover;
+}
+
+#hero-image-container h1 {
+    color: white;
+    font-size: 72px;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 0px;
+}
+
+#hero-image {
+    padding: 175px 300px 70px;
+    text-shadow: 2px 2px 10px black;
+    height: 100%;
+    background-color: rgba(0,0,0,.65);
+}
+
+nav ul li {
+    color:white;
+    display: inline-block;
+    padding: 10px 20px;
+    list-style-type: none;
+}
