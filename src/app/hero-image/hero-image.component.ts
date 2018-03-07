@@ -17,7 +17,7 @@ export class HeroImageComponent implements OnInit {
     let scrollPos = window.pageYOffset;
     if (scrollPos <= 920) {
       let image = document.getElementById("hero-image-container");
-      image.style.backgroundPositionY = (scrollPos *.4) + "px";
+      image.style.backgroundPositionY = Math.ceil(scrollPos *.15) + "px";
     }
   }
 
