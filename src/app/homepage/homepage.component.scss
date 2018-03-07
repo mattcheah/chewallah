@@ -1,6 +1,8 @@
+@import "~sass/styles";
+
 #site-description {
-  padding: 50px 150px;
-  background-color: #e4dbca;
+  padding: 60px 150px;
+  background-color: $sectionBackground;
 
   #description-container {
     display:flex;
@@ -20,4 +22,7 @@
   }
 }
 
-
+footer {
+  padding:40px 150px;
+  background-color: $sectionBackground;
+}

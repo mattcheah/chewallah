@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { ArtListComponent } from './art-list/art-list.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { HeroImageComponent } from './hero-image/hero-image.component';
+import { HeaderImageComponent } from './header-image/header-image.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { HeroImageComponent } from './hero-image/hero-image.component';
     AppComponent,
     ArtListComponent,
     HomepageComponent,
-    HeroImageComponent
+    HeroImageComponent,
+    HeaderImageComponent
   ],
   imports: [
     BrowserModule
