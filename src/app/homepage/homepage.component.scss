@@ -1,7 +1,23 @@
-#hero-image-container {
-    height: 500px;
-    background-color:#333;
-    // background-image: url('/assets/images/mountain-range.jpg');
-    background-position-y: 34%;
-    background-size: cover;
+#site-description {
+  padding: 50px 150px;
+  background-color: #e4dbca;
+
+  #description-container {
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .description-item {
+      width:33%;
+      padding: 20px 30px;
+      min-width: 200px;
+      text-align:center;
+
+      @media screen and (max-width: 745px) {
+        width: 100%;
+      }
+    }
+  }
 }
+
+
