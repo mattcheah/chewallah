@@ -1,7 +1,7 @@
 .art-piece-container {
   width: 600px;
   margin: 0 auto;
-  perspective:500px;
+  perspective:1000px;
 
   .art-piece-frame {
     background-image: url('/assets/images/artpiece-border.png');
@@ -9,7 +9,7 @@
     width:100%;
     background-repeat:no-repeat;
     height:370px;
-    perspective: 1000px;
+    perspective: 10000px;
     transform-style: preserve-3d;
   }
 
@@ -20,14 +20,14 @@
     background-size:120%;
     position:relative;
     z-index:10;
-    transform: translateZ(-10px);
+    transform: translateZ(-18px);
   }
 
   .frame-side {
     position:absolute;
     background-image: url('/assets/images/artpiece-border.png');
     width: 20px;
-    height: 316px;
+    height: 345px;
     /* border: 2px solid red; */
     filter: contrast(70%) brightness(50%);
   }
@@ -36,25 +36,52 @@
     position: absolute;
     width: 600px;
     height:20px;
-    border:2px solid pink;
+    background-image: url('/assets/images/artpiece-border.png');
+    background-position: -128px -11px;
+    background-size: 134%;
     transform: rotateX(90deg);
+    filter: contrast(70%) brightness(60%);
   }
 
   #frame-outer-left {
     height: 360px;
-    transform: translate3D(-3px, -372px, -3px) rotateY(90deg);
+    transform: translate3D(-14px, -371px, -7px) rotateY(122deg);
   }
   #frame-inner-left {
-    transform: translate3D(15px, -347px, -3px) rotateY(90deg);
+    transform: translate3D(7px, -363px, -9px) rotateY(105deg);
   }
 
   #frame-inner-right {
-    transform: translate3D(570px, -347px, -3px) rotateY(90deg);
+    transform: translate3D(569px, -365px, -9px) rotateY(90deg);
   }
 
   #frame-outer-right {
-    height: 360px;
-    transform: translate3D(595px, -370px, -3px) rotateY(90deg);
+    height: 362px;
+    transform: translate3D(593px, -371px, -7px) rotateY(54deg);
+  }
+  #frame-inner-top {
+    transform: translate3D(0px, -354px, -10px) rotateX(90deg)
+  }
+
+  #frame-inner-bottom {
+    transform: translate3D(0px, -40px, -10px) rotateX(90deg)
+  }
+
+  .shadow {
+    width: 550px;
+    height: 0px;
+    box-shadow: 0px 0px 140px 40px black;
+    position: absolute;
+    overflow: visible;
+    opacity:.8;
+  }
+
+  #bottom-shadow-left {
+    transform: translate3d(29px, 6px, -0px) rotateX(90deg) rotateZ(9deg);
+  }
+
+  #bottom-shadow-right {
+    transform: translate3d(23px, 6px, -0px) rotateX(90deg) rotateZ(-9deg);
   }
 
   .art-piece-pseudo {
@@ -64,23 +91,23 @@
     transform-style: preserve-3d;
   }
 
-  .art-piece-pseudo:after {
-    content: "";
-    width:520px;
-    position: absolute;
-    box-shadow: 40px -60px 30px 18px #222;
-    transform: rotate(3deg) translateZ(-10px);
-    z-index:1;
-  }
+  // .art-piece-pseudo:after {
+  //   content: "";
+  //   width:520px;
+  //   position: absolute;
+  //   box-shadow: 43px -20px 40px 32px #222;
+  //   transform: rotate(3deg) translateZ(-20px);
+  //   z-index:1;
+  // }
 
-  .art-piece-pseudo:before {
-    content: "";
-    width:520px;
-    position: absolute;
-    box-shadow: 18px 350px 30px 18px #222;
-    transform: rotate(-3deg) translateZ(-10px);
-    z-index:1;
-  }
+  // .art-piece-pseudo:before {
+  //   content: "";
+  //   width:520px;
+  //   position: absolute;
+  //   box-shadow: 18px 355px 40px 32px #222;
+  //   transform: rotate(-3deg) translateZ(-20px);
+  //   z-index:1;
+  // }
 
   .separator {
     width: 80%;
