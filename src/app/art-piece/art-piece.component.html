@@ -1,5 +1,8 @@
 
-<div class="art-piece-container">
+<div id="{{piece.nameCode}}" class="art-piece-container">
+  <div class="slidecontainer">
+    <input id="slider-{{piece.nameCode}}" type="range" min="0" max="180" value="90" class="slider">
+  </div>
 
   <div class="art-piece-pseudo">
     <div class="art-piece-frame" >
@@ -10,8 +13,8 @@
     <div id="frame-inner-left" class="frame-side"></div>
     <div id="frame-inner-right" class="frame-side"></div>
     <div id="frame-outer-right" class="frame-side"></div>
-    <div id="frame-inner-top" class="frame-side"></div>
-    <div id="frame-inner-bottom" class="frame-side"></div>
+    <div id="frame-inner-top" class="frame-horizontal"></div>
+    <div id="frame-inner-bottom" class="frame-horizontal"></div>
   </div>
 
   <div class="separator"></div>

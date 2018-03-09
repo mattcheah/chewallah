@@ -23,10 +23,45 @@
     transform: translateZ(-10px);
   }
 
+  .frame-side {
+    position:absolute;
+    background-image: url('/assets/images/artpiece-border.png');
+    width: 20px;
+    height: 316px;
+    /* border: 2px solid red; */
+    filter: contrast(70%) brightness(50%);
+  }
+
+  .frame-horizontal {
+    position: absolute;
+    width: 600px;
+    height:20px;
+    border:2px solid pink;
+    transform: rotateX(90deg);
+  }
+
+  #frame-outer-left {
+    height: 360px;
+    transform: translate3D(-3px, -372px, -3px) rotateY(90deg);
+  }
+  #frame-inner-left {
+    transform: translate3D(15px, -347px, -3px) rotateY(90deg);
+  }
+
+  #frame-inner-right {
+    transform: translate3D(570px, -347px, -3px) rotateY(90deg);
+  }
+
+  #frame-outer-right {
+    height: 360px;
+    transform: translate3D(595px, -370px, -3px) rotateY(90deg);
+  }
 
   .art-piece-pseudo {
     transition: transform .5s;
-    transform: rotate3d(0, 1, 0, 5deg);
+    // transform: rotate3d(0, 1, 0, 5deg);
+    perspective:1000px;
+    transform-style: preserve-3d;
   }
 
   .art-piece-pseudo:after {
@@ -34,7 +69,7 @@
     width:520px;
     position: absolute;
     box-shadow: 40px -60px 30px 18px #222;
-    transform: rotate(3deg);
+    transform: rotate(3deg) translateZ(-10px);
     z-index:1;
   }
 
@@ -43,7 +78,7 @@
     width:520px;
     position: absolute;
     box-shadow: 18px 350px 30px 18px #222;
-    transform: rotate(-3deg);
+    transform: rotate(-3deg) translateZ(-10px);
     z-index:1;
   }
 
@@ -59,4 +94,46 @@
     margin:20px 0;
   }
 
+}
+
+
+
+
+.slidecontainer {
+    width: 100%; /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 25px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #4CAF50; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #4CAF50; /* Green background */
+    cursor: pointer; /* Cursor on hover */
 }
