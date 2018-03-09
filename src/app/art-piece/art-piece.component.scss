@@ -86,28 +86,10 @@
 
   .art-piece-pseudo {
     transition: transform .5s;
-    // transform: rotate3d(0, 1, 0, 5deg);
     perspective:1000px;
     transform-style: preserve-3d;
   }
 
-  // .art-piece-pseudo:after {
-  //   content: "";
-  //   width:520px;
-  //   position: absolute;
-  //   box-shadow: 43px -20px 40px 32px #222;
-  //   transform: rotate(3deg) translateZ(-20px);
-  //   z-index:1;
-  // }
-
-  // .art-piece-pseudo:before {
-  //   content: "";
-  //   width:520px;
-  //   position: absolute;
-  //   box-shadow: 18px 355px 40px 32px #222;
-  //   transform: rotate(-3deg) translateZ(-20px);
-  //   z-index:1;
-  // }
 
   .separator {
     width: 80%;

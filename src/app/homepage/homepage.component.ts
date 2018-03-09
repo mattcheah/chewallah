@@ -19,10 +19,12 @@ export class HomepageComponent implements OnInit {
   pieces: ArtPiece[] = Pieces;
 
   startParallax = (): void => {
-    var scrollPos = window.pageYOffset;
-    this.parallax('hero-image-container', scrollPos, -32);
-    this.parallax('mountain-lake', scrollPos, 850);
-    this.parallax('quiet-afternoon', scrollPos, 350);
+    if (window.innerWidth > 460) {
+      var scrollPos = window.pageYOffset;
+      this.parallax('hero-image-container', scrollPos, -32);
+      // this.parallax('mountain-lake', scrollPos, 850);
+      // this.parallax('quiet-afternoon', scrollPos, 350);
+    }
   }
 
   parallax = (id: string, scrollPos: number, startingPos = 0): void => {

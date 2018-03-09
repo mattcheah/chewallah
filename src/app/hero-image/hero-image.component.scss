@@ -7,6 +7,18 @@
     background-position-x: 50%;
     background-position-y: -32px;
     background-size: 165%;
+
+    @media only screen and (max-width: 1100px) {
+      height:700px;
+    }
+
+    @media only screen and (max-width: 750px) {
+      height:400px;
+    }
+    @media only screen and (max-width: 460px) {
+      background-size:cover;
+      background-position-y: 0px;
+    }
 }
 
 #hero-image-container h1 {
@@ -17,7 +29,10 @@
     margin-top: 0px;
 
     @media only screen and (max-width: 1100px) {
-        font-size: 46px;
+      font-size: 56px;
+    }
+    @media only screen and (max-width: 460px) {
+      font-size:40px;
     }
 }
 
@@ -56,5 +71,16 @@ nav ul li {
         padding-bottom:8px;
         font-weight:400;
         font-size:32px;
+        @media only screen and (max-width: 1100px) {
+          font-size:26px;
+        }
     }
+
+    @media only screen and (max-width: 1100px) {
+      margin-top: 100px;
+    }
+    @media only screen and (max-width: 750px) {
+      display:none;
+    }
+
 }

@@ -1,4 +1,5 @@
 <app-hero-image></app-hero-image>
+
 <main>
   <div id="site-description">
     <div id="description-container">
@@ -29,16 +30,17 @@
     </div>
   </div>
 
-  <app-header-image title="Featured Artwork" backgroundImage="mountain-lake"></app-header-image>
+  <app-header-image title="Featured Artwork" backgroundImage="mountain-lake" offsetY="-325"></app-header-image>
 
   <div id="featured-container">
 
-    <app-art-piece id="{{pieces[2].nameCode}}" [piece]="pieces[2]" offset="-19px -83px"></app-art-piece>
+    <app-art-piece [piece]="pieces[2]" offset="-19px -83px"></app-art-piece>
     <app-art-piece [piece]="pieces[0]" offset="-55px -71px"></app-art-piece>
     <app-art-piece [piece]="pieces[6]" offset="-84px -52px"></app-art-piece>
+
   </div>
 
-  <app-header-image title="Contact Us" backgroundImage="quiet-afternoon"></app-header-image>
+  <app-header-image title="Contact Us" backgroundImage="double-bearl-lodge" offsetY="530"></app-header-image>
 
 </main>
 <footer>
