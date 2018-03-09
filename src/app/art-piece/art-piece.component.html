@@ -1,0 +1,21 @@
+
+<div class="art-piece-container">
+
+  <div class="art-piece-pseudo">
+    <div class="art-piece-frame" >
+      <div class="art-piece-image" [ngStyle]="{backgroundImage: 'url(/assets/images/'+piece.nameCode+'.jpg)', backgroundPosition: offset}">
+      </div>
+    </div>
+    <div id="frame-outer-left" class="frame-side"></div>
+    <div id="frame-inner-left" class="frame-side"></div>
+    <div id="frame-inner-right" class="frame-side"></div>
+    <div id="frame-outer-right" class="frame-side"></div>
+    <div id="frame-inner-top" class="frame-side"></div>
+    <div id="frame-inner-bottom" class="frame-side"></div>
+  </div>
+
+  <div class="separator"></div>
+  <div class="piece-captions">
+    <h3>{{piece.name}}</h3>
+  </div>
+</div>

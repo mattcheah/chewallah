@@ -1,0 +1,62 @@
+.art-piece-container {
+  width: 600px;
+  margin: 0 auto;
+  perspective:500px;
+
+  .art-piece-frame {
+    background-image: url('/assets/images/artpiece-border.png');
+    background-size:100%;
+    width:100%;
+    background-repeat:no-repeat;
+    height:370px;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+  }
+
+  .art-piece-image {
+    width:600px;
+    height:357px;
+    margin:100px auto 50px;
+    background-size:120%;
+    position:relative;
+    z-index:10;
+    transform: translateZ(-10px);
+  }
+
+
+  .art-piece-pseudo {
+    transition: transform .5s;
+    transform: rotate3d(0, 1, 0, 5deg);
+  }
+
+  .art-piece-pseudo:after {
+    content: "";
+    width:520px;
+    position: absolute;
+    box-shadow: 40px -60px 30px 18px #222;
+    transform: rotate(3deg);
+    z-index:1;
+  }
+
+  .art-piece-pseudo:before {
+    content: "";
+    width:520px;
+    position: absolute;
+    box-shadow: 18px 350px 30px 18px #222;
+    transform: rotate(-3deg);
+    z-index:1;
+  }
+
+  .separator {
+    width: 80%;
+    margin:20px auto;
+    border-bottom:1px solid black;
+  }
+
+  h3 {
+    font-size:36px;
+    text-align:center;
+    margin:20px 0;
+  }
+
+}
