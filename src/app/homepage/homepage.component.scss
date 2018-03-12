@@ -22,6 +22,20 @@
   }
 }
 
+.icon {
+  width:150px;
+  height:88px;
+  margin:0 auto;
+}
+
+#router-img {
+  background-image: url(/assets/images/icons/man-using-router.png);
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 footer {
   padding:40px 150px;
   background-color: $sectionBackground;
