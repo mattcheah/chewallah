@@ -11,6 +11,8 @@ import { DisplayPiece3dComponent } from './display-piece-3d/display-piece-3d.com
 import { AboutComponent } from './about/about.component';
 import { NavComponent } from './nav/nav.component';
 import { PageHeaderComponent } from './page-header/page-header.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 @NgModule({
@@ -23,7 +25,9 @@ import { PageHeaderComponent } from './page-header/page-header.component';
     DisplayPiece3dComponent,
     AboutComponent,
     NavComponent,
-    PageHeaderComponent
+    PageHeaderComponent,
+    PortfolioComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

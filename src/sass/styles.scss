@@ -15,6 +15,10 @@ a, a:hover, a:visited, a:active {
     text-decoration: none;
 }
 
-h1, h2 {
+#title, #subtitle {
   text-shadow: 2px 2px 10px black;
+}
+
+.container {
+  padding:40px 150px;
 }
