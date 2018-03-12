@@ -7,7 +7,7 @@ import { ArtListComponent } from './art-list/art-list.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { HeroImageComponent } from './hero-image/hero-image.component';
 import { HeaderImageComponent } from './header-image/header-image.component';
-import { ArtPieceComponent } from './art-piece/art-piece.component';
+import { DisplayPiece3dComponent } from './display-piece-3d/display-piece-3d.component';
 import { AboutComponent } from './about/about.component';
 import { NavComponent } from './nav/nav.component';
 
@@ -19,7 +19,7 @@ import { NavComponent } from './nav/nav.component';
     HomepageComponent,
     HeroImageComponent,
     HeaderImageComponent,
-    ArtPieceComponent,
+    DisplayPiece3dComponent,
     AboutComponent,
     NavComponent
   ],

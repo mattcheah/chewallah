@@ -1,9 +1,9 @@
-.art-piece-container {
+.display-piece-3d-container {
   width: 600px;
   margin: 0 auto;
   perspective:1000px;
 
-  .art-piece-frame {
+  .display-piece-3d-frame {
     background-image: url('/assets/images/artpiece-border.png');
     background-size:100%;
     width:100%;
@@ -13,7 +13,7 @@
     transform-style: preserve-3d;
   }
 
-  .art-piece-image {
+  .display-piece-3d-image {
     width:600px;
     height:357px;
     margin:100px auto 50px;
@@ -84,7 +84,7 @@
     transform: translate3d(23px, 6px, -0px) rotateX(90deg) rotateZ(-9deg);
   }
 
-  .art-piece-pseudo {
+  .display-piece-3d-pseudo {
     transition: transform .5s;
     perspective:1000px;
     transform-style: preserve-3d;
