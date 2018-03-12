@@ -8,6 +8,7 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { HeroImageComponent } from './hero-image/hero-image.component';
 import { HeaderImageComponent } from './header-image/header-image.component';
 import { ArtPieceComponent } from './art-piece/art-piece.component';
+import { AboutComponent } from './about/about.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { ArtPieceComponent } from './art-piece/art-piece.component';
     HomepageComponent,
     HeroImageComponent,
     HeaderImageComponent,
-    ArtPieceComponent
+    ArtPieceComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule
