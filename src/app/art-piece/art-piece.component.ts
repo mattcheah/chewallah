@@ -24,8 +24,8 @@ export class ArtPieceComponent implements OnInit {
   ngAfterViewInit() {
     let myPiece = this.piece;
 
-    let container = document.querySelector("#" + myPiece.nameCode + " .art-piece-pseudo");
-    container.addEventListener('mousemove', function(e) {
+    let container = <HTMLElement>document.querySelector("#" + myPiece.nameCode + " .art-piece-pseudo");
+    container.addEventListener('mousemove', function(e: any) {
       let position = e.offsetX/600;
       let angle = (position*52)-26;
       container.style.transform = "rotateY(" + angle + "deg)";
