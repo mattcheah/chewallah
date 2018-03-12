@@ -1,0 +1,39 @@
+#page-header {
+  color:white;
+  width:100%;
+  padding:80px 0;
+  text-align:center;
+  background-image: url("/assets/images/double-bearl-lodge.jpg");
+  background-position-y: -507px;
+  background-color:#403424;
+  background-size:cover;
+
+  h1 {
+    color: white;
+    font-size: 72px;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 0px;
+    @media only screen and (max-width: 1100px) {
+      font-size: 56px;
+    }
+    @media only screen and (max-width: 460px) {
+      font-size:40px;
+    }
+  }
+
+  h2 {
+    text-align: center;
+    color: white;
+    display: inline-block;
+    padding-bottom: 8px;
+    font-weight: 400;
+    font-size: 32px;
+
+    @media only screen and (max-width: 1100px) {
+      font-size:26px;
+    }
+  }
+}
+
+

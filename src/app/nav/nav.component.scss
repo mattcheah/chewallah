@@ -3,11 +3,18 @@
 nav ul {
   padding: 0;
   text-align: center;
+  border-bottom:1px solid white;
+  width:50%;
+  margin:0 auto;
 }
 
 nav ul li {
     color:white;
     display: inline-block;
-    padding: 10px 20px;
+    padding: 10px 20px 20px;
+    text-shadow: 1px 1px 4px black, 2px 2px 4px black;
     list-style-type: none;
+    :hover {
+      text-shadow: 1px 1px 4px black, 2px 2px 4px black, 0px 0px 8px #222, 0px 0px 6px #111;
+    }
 }

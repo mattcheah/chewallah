@@ -10,6 +10,7 @@ import { HeaderImageComponent } from './header-image/header-image.component';
 import { DisplayPiece3dComponent } from './display-piece-3d/display-piece-3d.component';
 import { AboutComponent } from './about/about.component';
 import { NavComponent } from './nav/nav.component';
+import { PageHeaderComponent } from './page-header/page-header.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { NavComponent } from './nav/nav.component';
     HeaderImageComponent,
     DisplayPiece3dComponent,
     AboutComponent,
-    NavComponent
+    NavComponent,
+    PageHeaderComponent
   ],
   imports: [
     BrowserModule,
