@@ -3,6 +3,7 @@
 #site-description {
   padding: 60px 150px;
   background-color: $sectionBackground;
+  box-shadow:inset 0 0 200px 22px #928772;
 
   #description-container {
     display:flex;
@@ -22,18 +23,29 @@
   }
 }
 
-.icon {
+.icon-container {
   width:150px;
   height:88px;
   margin:0 auto;
-}
 
-#router-img {
-  background-image: url(/assets/images/icons/man-using-router.png);
-  width: 100%;
-  height: 100%;
-  background-size: contain;
-  background-repeat: no-repeat;
+  .icon {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  #router-img {
+    background-image: url(/assets/images/icons/man-using-router.png);
+  }
+
+  #fence-img {
+    background-image: url(/assets/images/icons/fence-icon.png);
+  }
+
+  #paper-img {
+    background-image: url(/assets/images/icons/paper-icon.png);
+  }
 }
 
 footer {

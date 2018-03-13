@@ -13,6 +13,7 @@ import { NavComponent } from './nav/nav.component';
 import { PageHeaderComponent } from './page-header/page-header.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { ContactComponent } from './contact/contact.component';
     NavComponent,
     PageHeaderComponent,
     PortfolioComponent,
-    ContactComponent
+    ContactComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
