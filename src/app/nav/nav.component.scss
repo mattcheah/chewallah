@@ -6,6 +6,10 @@ nav ul {
   border-bottom:1px solid white;
   width:50%;
   margin:0 auto;
+
+  @media only screen and (max-width: 780px) {
+    width:80%;
+  }
 }
 
 nav ul li {
