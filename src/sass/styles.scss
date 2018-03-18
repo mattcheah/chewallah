@@ -28,3 +28,10 @@ a, a:hover, a:visited, a:active {
     padding: 40px 5%;
   }
 }
+
+main {
+  padding: 40px 12vw;
+  @media screen and (max-width: 750px) {
+    padding: 40px 5vw;
+  }
+}

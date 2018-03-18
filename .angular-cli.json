@@ -21,7 +21,10 @@
       "styles": [
         "sass/styles.scss"
       ],
-      "scripts": [],
+      "scripts": [
+        "assets/scripts/fontawesome.min.js",
+        "assets/scripts/fa-brands.min.js"
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
