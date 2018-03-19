@@ -5,6 +5,9 @@ footer {
   background-color: #e4dbca;
   -webkit-box-shadow: inset 0 0 200px 22px #928772;
   box-shadow: inset 0 0 200px 22px #928772;
+  @media screen and (max-width:750px) {
+    padding: 40px 5vw;
+  }
 }
 
 #footer-container {
@@ -13,16 +16,40 @@ footer {
   justify-content:space-between;
   
   #footer-text {
-    width:50%;
+    width:60%;
+    order:1;
+    @media screen and (max-width:750px) {
+      padding:0 20px;
+      width:100%;
+    }
   }
   #footer-menu {
-    width:30%;
+    width:20%;
     padding:0 20px;
+    order: 2;
+    
+    li {
+      list-style-type:none;
+    }
+
+    @media screen and (max-width:750px) {
+      width:100%;
+      order: 3;
+      li {
+        display:inline-block;
+        padding:10px 20px;
+      }
+    }
   }
   #footer-social {
     width:20%;
-    padding:0 20px;
-
+    padding: 20px;
+    order: 3;
+    @media screen and (max-width:750px) {
+      width:100%;
+      order: 2;
+      text-align:center;
+    }
   }
 }
 

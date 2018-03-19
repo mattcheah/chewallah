@@ -1,6 +1,8 @@
 @import "~sass/styles";
 
-
+#page-header {
+    background-position-y: -200px;
+}
 
 .flex-container {
     display:flex;
