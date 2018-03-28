@@ -1,0 +1,51 @@
+@import "~sass/styles";
+
+#contact-form-container {
+  padding: 40px;
+  border: 1px solid #c3bebb;
+  border-radius: 8px;
+  background-color: #dad5c8;
+
+  .form-group {
+    margin: 20px;
+  }
+
+  label {
+      width: 135px;
+      display: inline-block;
+      font-size: 12px;
+      text-align: right;
+      color: #613b0a;
+  }
+
+  input, textarea {
+    display: inline-block;
+    width: 300px;
+    background-color: rgba(0,0,0,0);
+    box-shadow:0px 1px 0px 0px #613b0a;
+    margin-left:10px;
+    border: none;
+    font-size:14px;
+    outline:none;
+    padding: 0 0 4px 10px;
+
+  }
+
+  input:focus, textarea:focus {
+    border-left:3px solid darkgreen;
+    // border-top-left-radius:3px;
+    padding-left:7px;
+  }
+
+  textarea {
+    height:100px;
+  }
+
+  button {
+    padding: 10px 30px;
+    border-radius: 5px;
+    background-color: #bfdeec;
+  }
+}
+
+

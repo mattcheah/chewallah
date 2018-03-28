@@ -1,4 +1,32 @@
 <app-page-header pageTitle="Contact Us" headerImage="ben-alaska-work.jpg"></app-page-header>
 <main>
+
+  <h2>Send Us A Message!</h2>
+  <p>Would you like to commission a piece by Chewallah Designs? Fill in your information here and we'll get in contact with you!</p>
+
+  <div id="contact-form-container">
+    <form>
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input [(ngModel)]="name" name="name" type="text" class="form-control" id="name" placeholder="Enter your Full Name Here:" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number:</label>
+        <input [(ngModel)]="phone" type="text" name="phone" class="form-control" id="phone" placeholder="Enter your Phone Number Here:" >
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address:</label>
+        <input [(ngModel)]="email" type="text" name="email" class="form-control" id="email" placeholder="Enter your Email Address Here:" >
+      </div>
+      <div class="form-group">
+        <label for="comments">Questions or Comments:</label>
+        <textarea [(ngModel)]="message" type="text" name="comments" class="form-control" id="comments" placeholder="Write any questions or comments here:"></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit">Send Message</button>
+      </div>
+    </form>
+  </div>
+
 </main>
 <app-footer></app-footer>
