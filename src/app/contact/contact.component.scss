@@ -1,11 +1,14 @@
 @import "~sass/styles";
 
 #contact-form-container {
+
   padding: 40px;
   border: 1px solid #c3bebb;
   border-radius: 8px;
   background-color: #dad5c8;
-
+  form {
+    width:500px;
+  }
   .form-group {
     margin: 20px;
   }
@@ -28,7 +31,7 @@
     font-size:14px;
     outline:none;
     padding: 0 0 4px 10px;
-
+    border-radius: 0px;
   }
 
   input:focus, textarea:focus {
@@ -40,11 +43,8 @@
   textarea {
     height:100px;
   }
-
-  button {
-    padding: 10px 30px;
-    border-radius: 5px;
-    background-color: #bfdeec;
+  #submit-group {
+    text-align:right;
   }
 }
 

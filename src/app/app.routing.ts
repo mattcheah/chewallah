@@ -22,7 +22,7 @@ const appRoutes: Routes = [
   {
     path: "contact",
     component: ContactComponent
-  }
+  },
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);
