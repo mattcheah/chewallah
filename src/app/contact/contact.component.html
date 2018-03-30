@@ -5,29 +5,34 @@
   <p>Would you like to commission a piece by Chewallah Designs? Fill in your information here and we'll get in contact with you!</p>
 
   <div id="contact-form-container">
-    <form>
-      <div class="form-group">
-        <label for="name">Name:</label>
-        <input [(ngModel)]="name" name="name" type="text" class="form-control" id="name" placeholder="Enter your Full Name Here:" required>
-      </div>
-      <div class="form-group">
-        <label for="phone">Phone Number:</label>
-        <input [(ngModel)]="phone" type="text" name="phone" class="form-control" id="phone" placeholder="Enter your Phone Number Here:" >
-      </div>
-      <div class="form-group">
-        <label for="email">Email Address:</label>
-        <input [(ngModel)]="email" type="text" name="email" class="form-control" id="email" placeholder="Enter your Email Address Here:" >
-      </div>
-      <div class="form-group">
-        <label for="comments">Questions or Comments:</label>
-        <textarea [(ngModel)]="message" type="text" name="comments" class="form-control" id="comments" placeholder="Write any questions or comments here:"></textarea>
-      </div>
-      <div id="submit-group" class="form-group">
-        <button class="btn btn-primary" type="submit" (click)="sendMessage()">Send Message</button>
-      </div>
-    </form>
-    <!-- <p [hidden]="!messageSent">Error: Contact form did not send your message. Please send an email to cheah.pengan@gmail.com instead.</p> -->
-    <p [hidden]="!messageSent"><small>{{responseMessage}}</small></p>
+    <div id="contact-form-inner-container">
+      <form>
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input [(ngModel)]="name" name="name" type="text" class="form-control" id="name" placeholder="Enter your Full Name Here:" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number:</label>
+          <input [(ngModel)]="phone" type="text" name="phone" class="form-control" id="phone" placeholder="Enter your Phone Number Here:" >
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address:</label>
+          <input [(ngModel)]="email" type="text" name="email" class="form-control" id="email" placeholder="Enter your Email Address Here:" >
+        </div>
+        <div class="form-group">
+          <label for="comments">Questions or Comments:</label>
+          <textarea [(ngModel)]="message" type="text" name="comments" class="form-control" id="comments" placeholder="Write any questions or comments here:"></textarea>
+        </div>
+        <div id="submit-group" class="form-group">
+          <button class="btn btn-primary" type="submit" (click)="sendMessage()">Send Message</button>
+        </div>
+      </form>
+      <!-- <p [hidden]="!messageSent">Error: Contact form did not send your message. Please send an email to cheah.pengan@gmail.com instead.</p> -->
+      <p [hidden]="!messageSent"><small>{{responseMessage}}</small></p>
+    </div>
+    <div id="contact-image">
+      <img src="/assets/images/ben-working-1.jpg">
+    </div>
   </div>
 
 </main>
