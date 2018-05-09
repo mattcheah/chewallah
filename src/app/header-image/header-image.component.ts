@@ -20,7 +20,7 @@ export class HeaderImageComponent implements OnInit {
   }
 
   ngAfterViewInit()	{
-    this.item = document.getElementById('header-' + this.backgroundImage);
+    this.item = document.querySelector('#header-' + this.backgroundImage + ' .header-image');
 
     let computedY = window.getComputedStyle(this.item).backgroundPositionY;
     this.offsetY = this.convertToNum(this.offsetY);

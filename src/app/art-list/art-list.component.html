@@ -1,7 +1,7 @@
 <div id="portfolio-projects">
 
   <div *ngFor="let piece of artList" class="project" id="project-{{piece.nameCode}}">
-    <div class="project-image" [ngStyle]="{backgroundImage: 'url(/assets/images/'+piece.nameCode+'.jpg)'}"></div>
+    <div class="project-image" [ngStyle]="{backgroundImage: 'url(/assets/images/medium/'+piece.nameCode+'.jpg)'}"></div>
     <h2>{{piece.name}}</h2>
     <div class="line"></div>
     <div class="status">

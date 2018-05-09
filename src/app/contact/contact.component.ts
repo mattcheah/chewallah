@@ -37,9 +37,6 @@ export class ContactComponent implements OnInit {
       mode: "no-cors"
     })
     .then(function(res) {
-      // if (res.ok) {
-      //   return [res.ok, res.json()]
-      // }
       if (res.ok) {
         return res.json();
       } else {
@@ -61,33 +58,3 @@ export class ContactComponent implements OnInit {
   }
 
 }
-
-
-//This works
-
-// fetch("http://chewallahdesigns.com/backend/contact-form-submission.php", {
-//   method: "POST",
-//   body: JSON.stringify(formData),
-//   headers: {
-//     "content-type": "application/json"
-//   },
-//   mode: "no-cors"
-// })
-//   .then(function (res) {
-//     return res.json();
-//   })
-//   .then(function (res) {
-//     console.log(res)
-//     if (res.status == "OK") {
-//       thisComponent.messageSent = true;
-//       thisComponent.responseMessage = res.message;
-//     } else {
-//       throw res;
-//     }
-//     // if (resArray[0]) {
-//     //   thisComponent.messageSent = true;
-//     //   thisComponent.responseMessage = resArray[1].message;
-//     // } else {
-//     //   throw resArray[1];
-//     // }
-//   })

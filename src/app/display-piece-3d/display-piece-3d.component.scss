@@ -4,7 +4,7 @@
   perspective:1000px;
 
   .display-piece-3d-frame {
-    background-image: url('/assets/images/artpiece-border.png');
+    background-image: url('/assets/images/medium/artpiece-border.png');
     background-size:100%;
     width:100%;
     background-repeat:no-repeat;
@@ -25,10 +25,11 @@
 
   .frame-side {
     position:absolute;
-    background-image: url('/assets/images/artpiece-border.png');
+    background-image: url('/assets/images/medium/artpiece-border.png');
     width: 20px;
     height: 345px;
     /* border: 2px solid red; */
+    background-size:cover;
     filter: contrast(70%) brightness(50%);
   }
 
@@ -36,7 +37,7 @@
     position: absolute;
     width: 600px;
     height:20px;
-    background-image: url('/assets/images/artpiece-border.png');
+    background-image: url('/assets/images/medium/artpiece-border.png');
     background-position: -128px -11px;
     background-size: 134%;
     transform: rotateX(90deg);
@@ -45,7 +46,8 @@
 
   #frame-outer-left {
     height: 360px;
-    transform: translate3D(-14px, -371px, -7px) rotateY(122deg);
+    // transform: translate3D(-14px, -371px, -7px) rotateY(122deg);
+    transform: translate3D(-14px, -369px, -8px) rotateY(118deg);
   }
   #frame-inner-left {
     transform: translate3D(7px, -363px, -9px) rotateY(105deg);
@@ -56,8 +58,10 @@
   }
 
   #frame-outer-right {
-    height: 362px;
-    transform: translate3D(593px, -371px, -7px) rotateY(54deg);
+    // height: 362px;
+    // transform: translate3D(593px, -371px, -7px) rotateY(54deg);
+    height: 360px;
+    transform: translate3D(592px, -368px, -6px) rotateY(61deg);
   }
   #frame-inner-top {
     transform: translate3D(0px, -354px, -10px) rotateX(90deg)
